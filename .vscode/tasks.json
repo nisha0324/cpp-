@@ -1,9 +1,9 @@
 {
     "tasks": [
         {
-            "type": "shell",
-            "label": "C/C++: g++.exe build active file",
-            "command": "C:\\MinGW\\bin\\g++.exe",
+            "type": "cppbuild",
+            "label": "C/C++: cpp.exe build active file",
+            "command": "C:\\MinGW\\bin\\cpp.exe",
             "args": [
                 "-g",
                 "${file}",
@@ -11,7 +11,26 @@
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
             "options": {
-                "cwd": "${workspaceFolder}"
+                "cwd": "C:\\MinGW\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "Generated task by Debugger"
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: cpp.exe build active file ver(1)",
+            "command": "C:\\MinGW\\bin\\cpp.exe",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "C:\\MinGW\\bin"
             },
             "problemMatcher": [
                 "$gcc"
@@ -19,7 +38,8 @@
             "group": {
                 "kind": "build",
                 "isDefault": true
-            }
+            },
+            "detail": "Generated task by Debugger"
         }
     ],
     "version": "2.0.0"
