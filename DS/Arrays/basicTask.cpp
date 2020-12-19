@@ -44,12 +44,15 @@ string * enterDataAtPos(string input, int n, int pos, string names[]){
     return names;
 }
 
+
 string * deleteDataAtPos(int n, int pos, string names[]){
 
-     n = n-1;
+     
 
     for (int i = pos; i < n; i++)
         names[i] = names[i+1];
+
+        n = n-1;
 
     return names;    
 }
@@ -124,8 +127,6 @@ void selection(int choice, string * name, int n){
 }
 
 
- 
-
 int main(){
 
     string name[] = {"Nisha","Nitin","Ichigo","Yato","Hiyori","Yuki"};
@@ -137,6 +138,6 @@ int main(){
     //Selection
    selection(choice , name,n);
 
-
     return 0;
 }
+
